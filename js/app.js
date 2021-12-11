@@ -1,5 +1,5 @@
 const $ = document;
-const apiKey = "a2085b632ad7d9efbd41b8e785cf1c7f";
+const apiKey = process.env.API_KEY || "Your Openweather API Key";
 const homeBtn = $.querySelector("#home");
 const weatherEl = $.querySelector(".weather");
 const temp = $.querySelector("#temp span");
